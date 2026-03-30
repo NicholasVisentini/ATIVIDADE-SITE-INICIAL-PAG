@@ -1,0 +1,329 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #000;
+  border-bottom: 2px solid #32b9cd;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 65px;
+}
+
+.titulo {
+  color: #32b9cd;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.navbar {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 13px;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: #e3b062;
+  font-weight: 400;
+  transition: 0.2s;
+}
+
+.navbar .agora a {
+  color: #e3b062;
+  font-weight: 700;
+}
+
+.navbar li a:hover {
+  color: #ffffff;
+}
+
+.banner {
+  height: 360px;
+  background-image: url('../assets/imgs/bg-jelly-fish-para-home.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+}
+
+.banner .container {
+  display: flex;
+  align-items: center;
+}
+
+.banner p {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 600;
+  width: 260px;
+  line-height: 1.4;
+}
+
+.banner span {
+  font-weight: 800;
+}
+
+.social {
+  background-color: #f2f2f2;
+  padding: 60px 0;
+}
+
+.boxes {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.box {
+  width: 30%;
+  text-align: center;
+}
+
+.box img {
+  width: 90px;
+  margin-bottom: 15px;
+}
+
+.box h4 {
+  color: #e91e63;
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.box p {
+  font-size: 13px;
+  color: #555;
+  width: 90%;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.footer {
+  background-color: #32b9cd;
+  padding: 30px 0;
+}
+
+.footer .container {
+  text-align: center;
+}
+
+.footer h4 {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.version {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.navbar .separador {
+  color: #e3b062;
+  font-weight: 400;
+  margin: 0 6px;
+  user-select: none;
+}
+
+/* ///////////////////// */
+
+/* LOGIN PAGE */
+.login {
+  height: calc(100vh - 87px - 36px);
+  background-image: url('../assets/imgs/teste2.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.card-login {
+  background-color: rgba(242, 242, 242, 0.9);
+  padding: 30px 40px;
+  border-radius: 6px;
+  width: 360px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+
+.card-login h2 {
+  color: #e91e63;
+  font-weight: 700;
+  margin-bottom: 25px;
+  font-size: 22px;
+}
+
+.formulario .campo {
+  text-align: left;
+  margin-bottom: 18px;
+}
+
+.formulario .campo span {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #e91e63;
+  margin-bottom: 6px;
+}
+
+.formulario .campo input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1.5px solid #32b9cd;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #333;
+  transition: border-color 0.3s ease;
+}
+
+.formulario .campo input::placeholder {
+  color: #999;
+}
+
+.formulario .campo input:focus {
+  outline: none;
+  border-color: #e91e63;
+  box-shadow: 0 0 5px #e91e63;
+}
+
+.botao {
+  width: 100%;
+  background-color: #e91e63;
+  border: none;
+  padding: 10px 0;
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 12px;
+}
+
+.botao:hover {
+  background-color: #c2185b;
+}
+
+.login .container {
+  max-width: 360px;
+  padding: 0;
+}
+
+/* ///////////////////// */
+
+/* TELA DE CADASTRO */
+.card-cadastro {
+  background-color: rgba(242, 242, 242, 0.9);
+  padding: 25px 35px;
+  border-radius: 6px;
+  width: 400px;
+  max-height: 80vh;
+  overflow-y: hidden;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.card-cadastro h2 {
+  color: #e91e63;
+  font-weight: 700;
+  margin-bottom: 22px;
+  font-size: 22px;
+}
+
+.card-cadastro .formulario .campo {
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.card-cadastro .formulario .campo span {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #e91e63;
+  margin-bottom: 5px;
+}
+
+.card-cadastro .formulario .campo input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1.5px solid #32b9cd;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #333;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+.card-cadastro .formulario .campo input::placeholder {
+  color: #999;
+}
+
+.card-cadastro .formulario .campo input:focus {
+  outline: none;
+  border-color: #e91e63;
+  box-shadow: 0 0 5px #e91e63;
+}
+
+.card-cadastro .botao {
+  width: 100%;
+  background-color: #e91e63;
+  border: none;
+  padding: 10px 0;
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 12px;
+}
+
+.card-cadastro .botao:hover {
+  background-color: #c2185b;
+}
+
+.login .container {
+  width: auto;
+  padding: 0 15px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.login {
+  height: calc(100vh - 87px - 36px);
+  background-image: url('../assets/imgs/teste2.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
